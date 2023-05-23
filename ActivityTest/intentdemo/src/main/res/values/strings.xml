@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IntentDemo</string>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string name="province_app">下拉列表框选项</string>
+    <string name="province_prompt">选择你所在的省</string>
+    <string name="city_prompt">选择你所在的市</string>
+    <string name="county_prompt">选择你所在的区</string>
+</resources>
