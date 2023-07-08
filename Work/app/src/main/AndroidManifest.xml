@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="QQ"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Work"
+        tools:targetApi="31" >
+        <activity android:name=".RegisterActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".MusicActivity"
+            android:exported="true"/>
+        <activity android:name=".NoteActivity"
+            android:label="笔记列表"/>
+        <activity android:name=".AddActivity"
+            android:label="添加笔记"
+            android:parentActivityName=".NoteActivity"/>
+        <activity android:name=".EditActivity"
+            android:label="编辑笔记"
+            android:parentActivityName=".NoteActivity"/>
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
